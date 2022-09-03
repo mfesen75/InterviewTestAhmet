@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 import static com.testifi.utilities.LoginUtils.*;
 
-public class Login2_stepDefs {
+public class Login_stepDefs {
     WebDriver driver = WebDriverFactory.getDriver(ConfigurationReader.getProperty("browser"));
 
     @Given("User is on the Testifi website")

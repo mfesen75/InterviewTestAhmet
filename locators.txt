@@ -1,0 +1,32 @@
+//*[@id='navigation__login'] for login on the right
+//input[@type='text'] for username for login
+//*[@id='login__submit'] red login button
+//div[@class='ng-tns-c188-0'] for "don't have an account yet?"
+
+
+login button on the right:
+
+<button _ngcontent-xbx-c204="" mat-button="" id="navigation__login"
+routerlink="/login" class="mat-focus-indicator mat-button mat-button-base
+ng-star-inserted" tabindex="0"><span class="mat-button-wrapper">Login</span>
+<div matripple="" class="mat-ripple mat-button-ripple"></div><div class="mat-button-focus-overlay"></div></button>
+
+username :
+
+<input _ngcontent-xbx-c188="" matinput="" type="text"
+class="mat-input-element mat-form-field-autofill-control ng-tns-c58-15 cdk-text-field-autofill-monitored"
+id="mat-input-2" aria-invalid="false" aria-required="false">
+
+
+login button:
+
+<button _ngcontent-bjr-c188="" mat-flat-button="" color="primary" id="login__submit"
+class="mat-focus-indicator ng-tns-c188-0 mat-flat-button mat-button-base mat-primary">
+<span class="mat-button-wrapper">Login</span><div matripple="" class="mat-ripple mat-button-ripple"></div>
+<div class="mat-button-focus-overlay"></div></button>
+
+
+
+"don't have an account yet?" :
+
+<p _ngcontent-exy-c188="" class="ng-tns-c188-0">don't have an account yet?</p>

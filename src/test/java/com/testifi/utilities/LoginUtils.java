@@ -11,8 +11,8 @@ public class LoginUtils {
     public static boolean loginState(WebDriver driver) {
 
         WebElement[] arr = {driver.findElement(By.id(ConfigurationReader.getProperty("homeBtnID"))),
-                driver.findElement(By.id(ConfigurationReader.getProperty("petsBtnID"))),
-                driver.findElement(By.id(ConfigurationReader.getProperty("storeBtnID")))};
+                            driver.findElement(By.id(ConfigurationReader.getProperty("petsBtnID"))),
+                            driver.findElement(By.id(ConfigurationReader.getProperty("storeBtnID")))};
 
         String[] arrTextActual = {ConfigurationReader.getProperty("homeTabText"),
                                   ConfigurationReader.getProperty("petTabText"),
@@ -37,7 +37,7 @@ public class LoginUtils {
     }
 
 
-    //Enters given credentials.
+
     public static void enterCredentials(String Username, String Password, WebDriver driver) {
 
         driver.findElement(By.id("mat-input-0")).sendKeys(Username);
@@ -46,7 +46,7 @@ public class LoginUtils {
 
     }
 
-    //Clicks log in button.
+
     public static void clickLogIn(WebDriver driver) {
 
         driver.findElement(By.id(ConfigurationReader.getProperty("loginBtnID"))).click();
@@ -54,7 +54,7 @@ public class LoginUtils {
 
     }
 
-    //Checks for error message.
+
     public static void checkErrorMSG( WebDriver driver) throws Exception {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Thread.sleep(1000);
